@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "manage-user-afiliation-870d3": {
+      "hosting": {
+        "iptvspm-angular": [
+          "manage-user-afiliation-870d3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "manage-user-afiliation-870d3"
+  }
+}

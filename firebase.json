@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "iptvspm-angular",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
