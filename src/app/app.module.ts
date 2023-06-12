@@ -8,12 +8,16 @@ import { RegisterComponent } from './component/register/register.component';
 import { DashbordComponent } from './component/dashbord/dashbord.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     DashbordComponent,
+    ForgotPasswordComponent,
+    VarifyEmailComponent,
 
   ],
   imports: [
