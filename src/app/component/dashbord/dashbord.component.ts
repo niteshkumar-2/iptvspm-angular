@@ -30,9 +30,10 @@ export class DashbordComponent implements OnInit {
     this.getAllStudents();
   }
 
-  // register() {
-  //   this.auth.logout();
-  // }
+  register() {
+    this.auth.logout();
+  }
+
 
   getAllStudents() {
 
