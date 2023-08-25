@@ -26,7 +26,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: linear-gradient(to bottom, red, #302b63,pink);
 }
 .or-container {
   align-items: center;
@@ -34,7 +34,10 @@ body{
   display: flex;
   margin: 25px 0;
 }
+.center {
+  text-align: center;
 
+}
 .line-separator {
   background-color: #ccc;
   flex-grow: 5;
