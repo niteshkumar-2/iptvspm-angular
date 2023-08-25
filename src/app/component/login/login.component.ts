@@ -10,6 +10,8 @@ export class LoginComponent implements OnInit {
 
   email : string = '';
   password : string = '';
+  showPassword: boolean = true;
+  passwordType: String = "password"
 
   constructor(private auth : AuthService) { }
 
@@ -34,9 +36,16 @@ export class LoginComponent implements OnInit {
     this.password = '';
 
   }
+  onClickShowPassword() {
+    if(this.passwordType === "password"){
+      this.passwordType = "text"
+    }else{
+      this.passwordType = "password"
+    }
+    this.showPassword = !this.showPassword;
+  }
 
   signInWithGoogle() {
     this.auth.googleSignIn();
   }
-
 }
