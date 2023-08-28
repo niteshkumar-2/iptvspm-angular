@@ -30,10 +30,14 @@ isDarkThemeSelected: any;
     this.getAllStudents();
   }
 
-  register() {
+  // register() {
+  //   this.auth.logout();
+  // }
+  register(name: string) {
     this.auth.logout();
+    if(confirm("Do you want to log out?")) {
+    }
   }
-
   onClickThemeMode(mode: string) {
     const body = document.getElementsByTagName("body")[0];
     if (mode === "dark") {
@@ -80,14 +84,12 @@ isDarkThemeSelected: any;
     this.studentObj.first_name = this.first_name;
     this.studentObj.last_name = this.last_name;
     this.studentObj.mobile = this.mobile;
-
     this.data.addStudent(this.studentObj);
     this.resetForm();
 
   }
 
   updateStudent() {
-
   }
 
   deleteStudent(student: Student) {
