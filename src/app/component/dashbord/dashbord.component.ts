@@ -9,7 +9,7 @@ import { DataService } from 'src/app/shared/data.service';
   styleUrls: ['./dashbord.component.css']
 })
 export class DashbordComponent implements OnInit {
-
+isDarkThemeSelected: any;
   studentsList: Student[] = [];
   studentObj: Student = {
     id: '',
@@ -34,6 +34,16 @@ export class DashbordComponent implements OnInit {
     this.auth.logout();
   }
 
+  onClickThemeMode(mode: string) {
+    const body = document.getElementsByTagName("body")[0];
+    if (mode === "dark") {
+      this.isDarkThemeSelected = true;
+      body.setAttribute("data-bs-theme", "dark");
+    } else if (mode === "light") {
+      this.isDarkThemeSelected = false;
+      body.setAttribute("data-bs-theme", "");
+    }
+  }
 
   getAllStudents() {
 
