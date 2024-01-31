@@ -76,11 +76,11 @@ export class AuthService {
       }
     );
   }
-  googleSignIn() {
+
+  googleSignIn(){
     return this.fireauth.signInWithPopup(new GoogleAuthProvider).then(res => {
       this.router.navigate(['/dashbord']);
       localStorage.setItem('token',JSON.stringify(res.user?.uid));
-
     }, err => {
       alert(err.message);
     })

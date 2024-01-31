@@ -50,19 +50,15 @@ isDarkThemeSelected: any;
   }
 
   getAllStudents() {
-
     this.data.getAllStudents().subscribe(res => {
-
       this.studentsList = res.map((e: any) => {
         const data = e.payload.doc.data();
         data.id = e.payload.doc.id;
         return data;
       })
-
     }, err => {
       alert('Error while fetching student data');
     })
-
   }
 
   resetForm() {
@@ -78,7 +74,6 @@ isDarkThemeSelected: any;
       alert('Fill all input fields');
       return;
     }
-
     this.studentObj.id = '';
     this.studentObj.email = this.email;
     this.studentObj.first_name = this.first_name;
@@ -86,7 +81,6 @@ isDarkThemeSelected: any;
     this.studentObj.mobile = this.mobile;
     this.data.addStudent(this.studentObj);
     this.resetForm();
-
   }
 
   updateStudent() {
