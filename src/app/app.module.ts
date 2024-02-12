@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
+import { FileuploadComponent } from './component/fileupload/fileupload.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { VarifyEmailComponent } from './component/varify-email/varify-email.comp
     DashbordComponent,
     ForgotPasswordComponent,
     VarifyEmailComponent,
-
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,

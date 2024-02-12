@@ -23,7 +23,7 @@ isDarkThemeSelected: any;
   last_name: string = '';
   email: string = '';
   mobile: string = '';
-
+  fileName = '';
   constructor(private auth: AuthService, private data: DataService) { }
 
   ngOnInit(): void {
@@ -33,6 +33,7 @@ isDarkThemeSelected: any;
   // register() {
   //   this.auth.logout();
   // }
+
   register(name: string) {
     this.auth.logout();
     if(confirm("Do you want to log out?")) {
